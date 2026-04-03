@@ -14,7 +14,7 @@ export default function Tools() {
   ];
 
   return (
-    <section className="py-24 bg-white border-y">
+    <section id="tools" className="py-24 bg-white border-y scroll-mt-20">
       <div className="container mx-auto px-4 text-center">
         <h2 className="text-4xl font-extrabold text-gray-900 mb-6">Our <span className="text-primary">Tools</span></h2>
         <p className="text-lg text-gray-600 mb-16 max-w-2xl mx-auto">
