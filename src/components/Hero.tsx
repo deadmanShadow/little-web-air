@@ -76,17 +76,25 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.4 }}
         >
           <div className="flex items-center gap-4">
-            <button className="rounded-full bg-primary px-10 py-5 text-sm font-semibold text-white shadow-sm hover:bg-primary/90 transition-all">
+            <motion.button 
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="rounded-full bg-primary px-10 py-5 text-sm font-semibold text-white shadow-sm hover:bg-primary/90 transition-all"
+            >
               <div className="flex items-center gap-2">
                 Schedule a Meeting <FaArrowRight />
               </div>
-            </button>
+            </motion.button>
           </div>
      
           <div className="flex items-center gap-4">
-            <button className="flex items-center gap-2 text-lg font-bold text-gray-700 hover:text-primary transition-colors underline">
+            <motion.button 
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="flex items-center gap-2 text-lg font-bold text-gray-700 hover:text-primary transition-colors underline"
+            >
               See pricing
-            </button>
+            </motion.button>
           </div>
         </motion.div>
       </div>
